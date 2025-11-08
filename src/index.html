@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="icon" href="favicon.png" type="image/x-icon"/>
+  <title>Tudo sobre Filmes</title>
+</head>
+
+<body>
+  <div id="topo-fixo">
+    <nav>
+
+      <div>
+        Busca rápida
+      </div>
+
+      <div class="menu-item" data-source="Marvel">
+        Marvel ▾
+        <ul class="dropdown">
+          <li data-term="The Avengers">The Avengers</li>
+          <li data-term="Avengers: Age of Ultron">Avengers: Age of Ultron</li>
+          <li data-term="Avengers: Infinity War">Avengers: Infinity War</li>
+          <li data-term="Avengers: Endgame">Avengers: Endgame</li>
+          <li data-term="Thor">Thor</li>
+          <li data-term="Thor: Ragnarok">Thor: Ragnarok</li>
+          <li data-term="Spider-Man: No Way Home">Spider-Man: No Way Home</li>
+          <li data-term="Spider-Man: Across the Spider-Verse">Spider-Man: Across the Spider-Verse</li>
+        </ul>
+      </div>
+
+      <div class="menu-item" data-source="Netflix">
+        Netflix ▾
+        <ul class="dropdown">
+          <li data-term="Aftersun">Aftersun</li>
+          <li data-term="Nonnas">Nonnas</li>
+          <li data-term="Red Notice">Alerta Vermelho</li>
+          <li data-term="Back in Action">De volta a ação</li>
+          <li data-term="Society of the Snow">A Sociedade da Neve</li>
+          <li data-term="Reptile">Camaleões</li>
+          <li data-term="Another Round">Druk - Mais Uma Rodada</li>
+          <li data-term="Leo">Leo</li>
+        </ul>
+      </div>
+
+      <div class="menu-item" data-source="HBO">
+        HBO ▾
+        <ul class="dropdown">
+          <li data-term="Barbie">Barbie</li>
+          <li data-term="Wonka">Wonka</li>
+          <li data-term="Black Adam">Adão Negro</li>
+          <li data-term="Elvis">Elvis</li>
+          <li data-term="Duna">Duna</li>
+          <li data-term="Godzilla Vs Kong">Godzilla Vs Kong</li>
+          <li data-term="Space Jam">Space Jam</li>
+          <li data-term="Wonder Woman">Mulher-Maravilha</li>
+        </ul>
+      </div>
+
+      <div id="favoritesBtn" class="menu-item">
+        Filmes favoritos ✨
+      </div>
+
+    </nav>
+  </div>
+
+  <header>
+    <h1>🎬 Buscador de Filmes</h1>
+    <p>Busque pelo nome original de algum filme ou série para ler a sinópse.</p>
+  </header>
+
+  <main>
+    <section class="search">
+      <input type="text" id="searchInput" placeholder="Ex: Avengers" />
+      <button id="searchBtn">Buscar</button>
+    </section>
+
+    <section id="results" class="results"></section>
+
+    <section class="favorites">
+      <div id="favorites-text"><h2>✨ Meus Favoritos ✨</h2></div>
+      <div id="favoritesList" class="favorites-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto acadêmico - Consumo de API OMDb</p>
+  </footer>
+
+  <script src="assets/script/script.js"></script>
+</body>
+</html>
